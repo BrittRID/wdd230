@@ -10,7 +10,7 @@ This is your main CSS file. */
 
 :root {
 
-	background-color: #448acc;
+	background-color: #2365a3;
 }
 
 * {
@@ -64,21 +64,21 @@ h1 {
 	font-size: 2rem;
 }
 
-nav {
+ nav {
 	background-color: #36454f;
 	margin: 0 auto;
 	max-width: 800px;
-}
+} 
 nav ul {
 	list-style-type: none;
 }
-nav a {
+ nav a {
 	display: block;
 	color: #fff;
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
-}
+} 
 
 nav a:hover {
 	border: 1px solid #fff;

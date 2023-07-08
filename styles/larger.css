@@ -2,3 +2,14 @@
 "styles" directory. This file's CSS rules will be contained
  in a media query and therefore the declarations
  will only apply in the larger views. */
+ 
+  /* Large devices -lg- (desktops, 992px and up) */
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
