@@ -1,0 +1,20 @@
+/* Add another CSS file named "larger.css" to the 
+"styles" directory. This file's CSS rules will be contained
+ in a media query and therefore the declarations
+ will only apply in the larger views. */
+
+ @media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}

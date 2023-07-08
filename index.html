@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <meta property="og:title" content="Brittany Ridley WDD 230 Home Page">
+        <meta property="og:type" content="website homepage">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="">
+        <meta name="twitter:card" content="">
+        <title>Brittany Ridley- WDD 230 - Web Fronted Development</title>
+        <meta name="description" content="WDD 230 - Web Fronted Development - Brittany Ridley - Course assignment portal">
+        <meta name="author" content="Brittany Ridley">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/hamburger.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="preconnect" href="http://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    </head>
+<body>
+    <header>
+        <picture>
+            <img src="images/1666962673865.jpg" class="hero-image" alt="profile pic" loading="pic" width="400" height="600">
+        </picture>
+        <h1 class="hero-name">Brittany Ridley</h1>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <!-- Dark mode -->
+    <div id="mode">
+        ☑️
+    </div>
+    <main>
+       <h2>WDD 230: Web Frontend Development</h2>
+   <section class="card">
+    <h3 class="text">Learning Activities</h3>
+    <ul>
+        <li class="la">week01</li>
+        <li class="la">week02</li>
+        <li class="la">week03</li>
+        <li class="la">week04</li>  
+        <li class="la">week05</li>
+        <li class="la">week06</li>   
+        <li class="la">week07</li>   
+    </ul> 
+   </section>
+   <section class="card">
+    <h3 class="text">Information</h3>
+   <p>Weather</p>
+   <p>Alabama</p>
+    <p>This page has been visited <span id="visitorCount">0</span> times.</p>
+   </section>
+   
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Brittany Ridley Alabama</p>
+        <p>Last modified <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/counter.js"></script>
+</body>
+</html>

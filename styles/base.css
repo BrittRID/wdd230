@@ -1,0 +1,205 @@
+/* Add a CSS file named 
+"base.css" to the "styles" directory. 
+This is your main CSS file. */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: border-box;
+  }
+  
+body {
+	font-family: "Sansita", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* mobile **************************/
+header {
+	background-color: #bbb;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+header img {
+	padding: 1%;
+    width: 25%;
+    height: 25%;
+}
+ header,
+main {
+	max-width: 800px;
+	margin: 0 auto;
+} 
+main {
+	display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 16px;
+}
+
+main h2 {
+  grid-column: 1 /span 2;
+
+} 
+/* round the border */
+ main section {
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	max-width: 800px;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	border: 1px solid #fff;
+}
+
+a {
+    text-decoration: none;
+} 
+
+.active {
+	color: yellow;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+
+
+/* Dark mode */
+
+main {
+	margin: 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+	width: 760px;
+	background-color: #eee;
+	color: #000;
+}
+
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
+/* Header image */
+header img {
+	padding: 1%;
+    width: 25%;
+    height: 25%;
+}
+
+/* Grid side by side  */
+.hero-name {
+	text-align: center;
+	font-size: 45px;
+	width: 300px;
+	margin: 0 auto;
+  }
+   
+.text {
+	color: black;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	margin: 0;
+  }
+  
+.card {
+	padding: 1rem;
+	background: linear-gradient(to bottom left, #f6eff0 40%, #dcdad8 100%);
+  } 
+  
+.card {
+	background-color: white;
+	border-radius: 0.25rem;
+	box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+  }
+  
+  .card-list {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+   
+  
+  .sidebyside {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 16px;
+  }
+
+   /* number of visit css */
+
+  
+   .label {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+  }
+  
+  #visitorCount {
+    color: navy;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  
+
+  #map{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    grid-column: 1/2;
+
+}
+#map iframe {
+    width: 100%;
+    height: 500px; 
+}
+
+
+  
+  .sidebar {
+	background-color: #f1f1f1;
+  }
