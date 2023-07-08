@@ -23,7 +23,7 @@ header {
 #header-background{
   /* width:100%; */
   height: auto;
-  background:url(https://th.bing.com/th/id/OIP._JANLXqpT4e6RSvNsH6TYgHaE8?pid=ImgDet&rs=1)
+  background:url(https://preview.redd.it/bjbundwu6zg11.jpg?auto=webp&s=642dbdbdb18bbc23c3569c6552c30f3a51ee9f6e)
 }
 
 header,
@@ -62,57 +62,6 @@ a {
 
 
 
- /* Hamburger menu */
-
-  #hamnav {
-    width: 100%;
-    background: #4da9db;
-  }
-  
-  
-  #hamitems {
-     display: flex;
-     }
-  
-  
-  
-  #hamitems a {
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-  }
-  #hamitems a:hover { background: #3060c0; }
-  
- 
-  #hamnav label, #hamburger { display: none; }
-
-
-@media screen and (max-width: 768px){
-
-  #hamitems a {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    border-top: 1px solid #9edfd7;
-  }
- 
- 
-  #hamnav label { 
-    display: inline-block; 
-    color: white;
-    background: #368a60;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
-  }
-
- 
-  #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { display: block; }
-}
 
 /* section css */
 .cards {
@@ -151,6 +100,8 @@ footer{
   margin: 5px 2px;
  
 }
+
+/* footer */
 
 .fa:hover {
     opacity: 0.7;
