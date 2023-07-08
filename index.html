@@ -11,10 +11,13 @@
         <title>Brittany Ridley- WDD 230 - Web Fronted Development</title>
         <meta name="description" content="WDD 230 - Web Fronted Development - Brittany Ridley - Course assignment portal">
         <meta name="author" content="Brittany Ridley">
+        <meta property="og:image"
+            content="https://en.wikipedia.org/wiki/Sweet_Water,_Alabama">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/hamburger.css">
         <link rel="stylesheet" href="styles/larger.css">
+        <!-- <link rel="stylesheet" href="styles/tample.css"> -->
         <link rel="preconnect" href="http://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -43,27 +46,42 @@
     <div id="mode">
         ☑️
     </div>
+    <div class="hero">
+        <div class="herolabel">
+            <p>The Washington D.C. Temple</p>
+        </div>
+        <picture>
+            <source srcset="images/washington-dc-temple-exterior-96d3c143eabbc3104ac9cafdae859b63c503fdcd-s900-c85.webp" media="(max-width: 800px)">
+            <img src="images/washington-dc-temple-exterior-96d3c143eabbc3104ac9cafdae859b63c503fdcd-s900-c85.webp" alt="DC" width="1000" height="1000" loading="Tample">
+        </picture>
+    </div>
     <main>
        <h2>WDD 230: Web Frontend Development</h2>
-   <section class="card">
-    <h3 class="text">Learning Activities</h3>
-    <ul>
-        <li class="week01">week01</li>
-        <li class="la">week02</li>
-        <li class="la">week03</li>
-        <li class="la">week04</li>  
-        <li class="la">week05</li>
-        <li class="la">week06</li>   
-        <li class="la">week07</li>   
-    </ul> 
-   </section>
-   <section class="card">
-    <h3 class="text">Information</h3>
-   <p>Weather</p>
-   <p>Alabama</p>
-    <p>This page has been visited <span id="visitorCount">0</span> times.</p>
-   </section>
-   
+       <div class="sidebyside">
+    <section class="card">
+        <h3 class="text">Learning Activities</h3>
+        <ul>
+            <li class="week01">week01</li>
+            <li class="la">week02</li>
+            <li class="la">week03</li>
+            <li class="la">week04</li>  
+            <li class="la">week05</li>
+            <li class="la">week06</li>   
+            <li class="la">week07</li>   
+        </ul> 
+       </section>
+    <section class="card">
+        <h3 class="text">Information</h3>
+        <p>Weather</p>
+        <p>Alabama</p>
+        <p>This page has been visited <span id="visitorCount">0</span> times.</p>
+       </section>
+   </div>
+
+<br>
+   <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212854.7867925407!2d-87.01494749272649!3d33.53112825234924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888911df5885bfd3%3A0x25507409eaba54ce!2sBirmingham%2C%20AL!5e0!3m2!1sen!2sus!4v1687663205664!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> Brittany Ridley Alabama</p>
