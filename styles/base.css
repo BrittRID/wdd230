@@ -174,3 +174,23 @@ header img {
 	.pic div {background: #000;	height: 18.5vw;	max-height: 640px;}
 	
 	.pic div:nth-of-type(3), .pic div:nth-of-type(8), .pic div:nth-of-type(13)  {	grid-column: 3/5; }	
+
+
+	/* Date simple css */
+	p {
+		margin: 1rem;
+		display: flex;
+	}
+	
+	.label {
+		display: block;
+		width: 175px;
+		font-weight: 700;
+		color: navy;
+		text-align: right;
+		margin-right: 10px;
+	}
+	
+	.smaller {
+		font-size: smaller;
+	}
