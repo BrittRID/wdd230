@@ -81,28 +81,42 @@
                  Aenean ultricies mi vitae est.
                   Mauris placerat eleifend leo.</p>
          </section>
-         <section class="card"> 
-            <h2>Virgin Rivers Chamber of Commerce spotlights' advertisements</h2>
-            <h1>📅 Date Math (Days Between Dates)</h1>
-         <p>See the ⚙️<a href="https://codepen.io/blazzard-jason/pen/ExeBjab" target="_blank">Date.now() TimeStamp</a> &nbsp; pen for Date.now() information.</p>
-         <hr>
-         <p><span class="label">Date.now(): </span> <span id="today"></span> &nbsp;<span class="smaller">(milliseconds)</span></p>
-         <p><span class="label">Next Christmas: </span> <span id="christmas"></span> &nbsp; <span class="smaller">(milliseconds)</span></p>
-         <p><span class="label">🎄Christmas - Date: </span> <span id="christmasDate"></span></p>
-         <hr>
-         <p><span class="label">Days until Christmas: </span> <span id="daysleft"></span></p>
-         </section>
-
-         
-
+        <section>
+           <h1 class="text">weather</h1>
+           <a class="weatherwidget-io" href="https://forecast7.com/en/33d52n86d80/birmingham/" data-label_1="BIRMINGHAM" data-label_2="WEATHER" data-theme="original" >BIRMINGHAM WEATHER*️⃣</a>
+           <div id="gallery">
+           </div>
+        </section>
+        <!-- Info about town -->
+        <section >
+            <h2>Calendar</h2>
+            <iframe src="https://calendar.google.com/calendar/embed?src=en.christian%23holiday%40group.v.calendar.google.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </section>
+         <!-- Info about town -->
+         <section class="time">
+            <h2>Date Math - Days Between Dates</h2>
+            <h3>User enter the date from today to Christimas to know how many days are between them.</h3>
+            <div>
+              <label for="startDate">Start Date:</label>
+              <input type="date" id="startDate">
+            </div>
+            <div>
+              <label for="endDate">End Date:</label>
+              <input type="date" id="endDate">
+            </div>
+            <button onclick="calculateDays()">Calculate</button>
+            <div id="results"></div>
+        </section>        
          <br>
-          <section>
-            <h2 class="stdlf">Barranquilla Columbia Temple</h2>
+         
+        
             <h1>Local Photos</h1>
-          <div class="container stdlf">
-            <figure><img class="hover" src="/chamber/images/1415344cf88c74ea5945cf75e4e55528.jpg" data-src="photo1.jpg" loading="lazy" width="250" height="167">
-                <figcaption>:hover pseudo-class | box-shadow</figcaption>
-            </figure>
+            <div class="w3-row-padding">
+                <div class="w3-col s3 w3-container">
+                <figure  ><img class="hover" src="/chamber/images/1415344cf88c74ea5945cf75e4e55528.jpg" data-src="photo1.jpg" loading="lazy" width="250" height="167">
+                    <figcaption>:hover pseudo-class | box-shadow</figcaption>
+                </figure>
+            </div>
             <figure>
                 <img src="/chamber/images/farmers-market.jpg" data-src="photo2.jpg" alt="Photo 2" loading="lazy" width="250" height="167">
                 <figcaption>:hover pseudo-class | box-shadow</figcaption>
@@ -125,7 +139,7 @@
             <figcaption>:hover pseudo-class | box-shadow</figcaption>
            </figure>
           </div>
-          </section>
+       
 </main>   
 <body>
     <footer>
