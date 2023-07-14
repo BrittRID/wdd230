@@ -91,7 +91,9 @@ footer{
   width:100%;
   height: auto;
 }
+
 .fa {
+  
   padding: 15px;
   font-size: 30px;
   width: 50px;
@@ -100,8 +102,6 @@ footer{
   margin: 5px 2px;
  
 }
-
-/* footer */
 
 .fa {
     padding: 20px;
