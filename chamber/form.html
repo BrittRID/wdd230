@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" href="images/favicon.ico">
+        <meta property="og:title" content="Brittany Ridley WDD 230 Home Page">
+        <meta property="og:type" content="website homepage">
+        <meta property="og:url" content="https://brittrid.github.io/wdd230/">
+        <title>Brittany Ridley- WDD 230 - Web Fronted Development</title>
+        <meta name="description" content="WDD 230 - Web Fronted Development - Brittany Ridley - Course assignment portal">
+        <meta name="author" content="Brittany Ridley">
+        <meta property="og:image"
+            content="https://en.wikipedia.org/wiki/Sweet_Water,_Alabama">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="/styles/hamburger.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="/styles/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    
+        <link rel="icon" href="images/favicon (2).ico">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+          </style>
+    </head>
+    <header id="header-background">
+        <div class="logo"></div>
+    <h1>Virgin Rivers Chamber of Commerce</h1>
+    </header>
+    <nav>
+    <a id="menu" href="#"></a>
+        <ul class="navigation">
+                <li><a class="active" href="/index.html">Home</a></li>
+                <li><a class="active" href="discover.html">Discover</a></li>
+                <li><a class="active" href="directory.html">Directory</a></li>
+                <li><a class="active" href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    <main>
+        <main>
+            <br>
+              <div id="formmessage"></div>
+              <h1>Contact Us</h1>
+              <form method="get">
+                  <p class="smaller">*️⃣ Indicates a required field</p>
+                  <label for="fullname" class="req">Name</label>
+                  <input type="text" id="fullname" name="fullname" required placeholder="Please enter your full name">
+                  <label for="email" class="req">Email Address</label>
+                  <input type="email" id="email" name="email" required placeholder="Please use your school email address">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone">
+                  <label for="keyphrase">Your Key Phrase</label>
+                  <input type="text" id="keyphrase" name="keyphrase" pattern="[a-zA-Z -]{6,}" placeholder="At least six characters long. No numbers.">
+                  <label for="keyphrase2">Re-enter Your Key Phrase</label>
+                  <input type="text" id="keyphrase2" name="keyphrase2">
+          
+                  <label for="comments" class="req">Your Message</label>
+                  <textarea id="comments" name="comments" required></textarea>
+                  <button id="btnSubmit" type="submit">Send Message</button>
+                  <input type="hidden" value="43aster">
+              </form>
+      <br>
+              <h1>Enter rating below</h1>
+      <label for="alpha">INPUT: text, required, pattern(alpha characters only), with CSS valid and invalid pseudo-classes</label>
+      <input type="text" id="alpha" name="alpha" required pattern="[A-Za-z]*">
+      <hr>
+      
+      <label for="fruit">INPUT: text, required, datalist - <br>What's your favorite fruit? <abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+      <input type="text" id="fruit" name="fruit" list="l1" required>
+      <hr>
+      
+      <label for="r">INPUT: range, min, max, datalist, required</label>
+      <div id="rangevalue">0</div>
+      <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+      <datalist id="rangevalues">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+      </datalist>
+      <div class="ref">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
+      </div>
+      <br>
+      
+      <label> common name</label>
+      <div class="stars">
+          <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+          <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+          <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+          <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+          <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+      </div>
+      <div class="ref"><a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank">Star Rating Source Pen</a></div>
+      <hr>
+      <div class="vcentered">
+          <label for="task" data-content="Completed the Module" class="inline">INPUT: checkbox, CSS size</label>
+          <input type="checkbox" id="task" name="task" value="task">
+      </div>
+      <div class="ref"><a href="https://codepen.io/kathykato/pen/xxGObEp">CheckBox Line Through Source</a></div>
+      
+      <datalist id="l1">
+          <option>Banana</option>
+          <option>Cherry</option>
+          <option>Apple</option>
+          <option>Strawberry</option>
+          <option>Lemon</option>
+          <option>Orange</option>
+      </datalist>
+          </main>
+      
+      
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script>
+              
+            $(document).ready(function () {
+              // Add smooth scrolling to all links
+              $("a").on("click", function (event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+        
+                  // Store hash
+                  var hash = this.hash;
+        
+                  // Using jQuery's animate() method to add smooth page scroll
+                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                  $("html, body").animate(
+                    {
+                      scrollTop: $(hash).offset().top,
+                    },
+                    800,
+                    function () {
+                      // Add hash (#) to URL when done scrolling (default click behavior)
+                      window.location.hash = hash;
+                    }
+                  );
+                } // End if
+              });
+            });
+          </script>
+      
+          <br>
+        </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Brittany Ridley Alabama</p>
+        <p>Last modified <span id="lastModified"></span></p>
+    </footer>
+    <script src="/scripts/getDates.js"></script>
+    <script src="/scripts/hamburger.js"></script>
+    <script src="scripts/join.js"> </script>
+    <script src="scripts/form.js"> </script>
+    <!-- <script src="/scripts/darkmode.js"></script>
+    <script src="/scripts/counter.js"></script>  -->
+</body>
+</html>

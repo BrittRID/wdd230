@@ -72,9 +72,24 @@
        </section>
     <section class="card">
         <h3 class="text">Information</h3>
-       
+        <div id="temperature"></div>
+        <div id="condition"></div>
+        <img id="weather-icon" src="" alt="Weather Icon">
+        <div class="input">
+            <input type="text" placeholder="Enter the city" class="input_text">
+            <input type="submit" value="Submit" class="submit">
+          </div>
+          <div class="container">
+            <div class="card">
+              <h1 class="name" id="name"></h1>
+              <p class="temp"></p>
+              <p class="clouds"></p>
+              <p class="desc"></p>
+            </div>
+          </div>
         <p>This page has been visited <span id="visitorCount">0</span> times.</p>
        </section>
+       
    </div>
 
 <br>
@@ -90,5 +105,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/counter.js"></script>
+    <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
