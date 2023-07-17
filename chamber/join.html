@@ -42,7 +42,7 @@
         <br>
     <main>
       <div class="container">
-        <form method="get" action="thankyou.html">
+        <form  id="myForm"  method="get" action="thankyou.html">
           <h1>Membership Application</h1>
           <div class="form-row">
             <label for="firstName">First Name:</label>
@@ -81,9 +81,9 @@
             <label for="description">Business/Organization Description:</label>
             <textarea id="description" name="description"></textarea>
           </div>
-          <input type="hidden" name="timestamp" value="">
+          <input type="hidden" id="formLoadedTimestamp"  name="formLoadedTimestamp" value="">
           <div class="form-row">
-            <a href="thankyou.html" target="_blank" ><input type="submit" value="Submit" ></a>
+            <a ><input type="submit" value="Submit" ></a>
           </div>
         </form>
       </div>

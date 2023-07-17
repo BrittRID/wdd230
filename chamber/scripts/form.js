@@ -33,3 +33,22 @@ range.addEventListener('input', displayRatingValue);
 function displayRatingValue() {
     rangevalue.innerHTML = range.value;
 }
+
+
+
+
+// Time stamp
+
+ // Function to get the current date and time in ISO format
+ function getCurrentTimestamp() {
+    return new Date().toISOString();
+  }
+
+  // Function to set the hidden field value with the current timestamp
+  function setFormLoadedTimestamp() {
+    var timestampField = document.getElementById("formLoadedTimestamp");
+    timestampField.value = getCurrentTimestamp();
+  }
+
+  // Attach the setFormLoadedTimestamp function to the form's onload event
+  window.onload = setFormLoadedTimestamp;
